@@ -1,6 +1,6 @@
 # [JSL03] Project Submission: Which one is which? Declarative or Imperative?!
 
-Loom Recording Link: [Insert Link]
+Loom Recording Link: [https://www.loom.com/share/b75f06b19f3b4e63a19b2aff3f092c00]
 
 # Project Overview
 
@@ -59,30 +59,50 @@ Follow the steps outlined above to complete the project successfully.
 
 # Presentation Talking Points
 
-Example #: [Insert Example Number]
+Example #: [Example_1]
 
 ## Imperative Approach [2 Minutes]
-1. **Step-by-Step Explanation:** Start by explaining the code logic in the imperative approach.
-   - Mention each step of the process in the code.
-   - Describe how the code provides explicit instructions for each action.
-   - Discuss the use of variables to track the state and progress of the process.
+Reasoning for Imperative Programming style: The function dictates the order of executing the operations(pre-heating grill, seasoning, cooking steak & having to serve steak).The cooking steps are sequential, whereby one step is executed after the other.
+1.Function cookSteak has 2 parameters: SteakWeight & desiredDoneness.
+2.Two Temperature Variables : grillTemperature & steakTemperature set at default values of zero.
+3.Two Constants: grillTemperature set to 240ºC and seasoning set to “Salt and Pepper”.
+4.Cooking Procedure: cooking process has an array of objects, informing of the steps in the cooking process. Temperature, seasoning & desiredDoneness provide details on how to carry out the steps in cooking.
+5.Looping and executing the conditions. The while loop ensures the cooking process is carried out for as long as steakTemperature has not met the desiredDoneness.
+Switch statements checking action and logging message e.g.:
+1.Season steak: logs seasoning method.
+2.Preheat grill: logs preheated temperature.
+3.Cooking steak until desired doneness: logs the doneness temperature.
+4.Serve the steak: logs that steak is ready to be served. If the condition is not met steak needs more cooking.
+6.The function is called with cooksteak(16,63) 16 oz, 63ºC meaning cooking of steak should be medium-rare .
 
-2. **Emphasis on How:** Highlight how the imperative approach focuses on detailing "how" the task is accomplished.
-   - Point out the use of loops, conditions, and explicit instructions.
-   - Discuss any mutable variables or states that change during execution.
 
 
-Example #: [Insert Example Number]
+
+
+Example #: [Example_2]
 
 ## Declarative Approach [2 Minutes]
-1. **High-Level Process Description:** Explain the code logic in the declarative approach.
-   - Describe the cooking process in a high-level, abstract manner.
-   - Emphasize that the code defines "what" should happen rather than "how" it should happen.
+Reasoning for Declarative conclusion: The cooksteak function highlights the specific action to be carried out throughout the cooking process( “preheat grill”, “seasoning steak”, “cook steak until desired doneness” than “serve steak”)
+1.Function cooksteak has two parameters: steakWeight  and  desiredDoneness.
+2.Two constants grillTemperatureCelsius set at 204ºC and seasoning= “Salt and Pepper”.
+3.Executing cooking process: has an array of objects highlighting actions to be undertaken in the cooking process. Temperature, seasoning and desiredDoneness provide the relevant details.
+4.A for loop has been implemented in order to execute the cookingProcess. There are switch statements that monitors the actions and logs a message out:
+-“Preheat grill” logs the preheating temperature.
+-“Season Steak” logs the method used in seasoning.
+-“Cook steak until desired doneness” logs the desired doneness temperature.
+-“Serve steak” logs that the steak is ready to be served.
+If the action does not meet any of the cases it logs message “invalid step in the cooking process”.
+5.The function cooksteak is called at(16,63)16 oz, 63ºc of which it is at a medium rare state.
+The declarative approach has abstract away from control flow and low-level operations, by specifying what needs to be achieved in the cooking process.
 
-2. **Use of Data Structures:** Discuss the use of data structures (e.g., arrays, objects) to represent the process steps.
-   - Explain how the process steps are organized in a structured format.
-   - Mention any abstraction layers or functions used to encapsulate actions.
 
 # Learning Outcome [1 Minute]
-- Reflect on what you've learned from analyzing these code examples in different paradigms.
+Imperative vs Declarative approach
+
+Example_1 followed the Imperative approach which had focused on how the tasks is to be performed, which was inclusive of the various steps ranging from step1-step4. It made usage of a while loop with set conditions and instructions on how to go about cooking the steak.
+
+Example_2 followed the Declarative approach which was orientated on the “how” to achieve the desired outcome. It had not detailed the steps to achieve the desired outcome.
+
+In conclusion I was able to distinguish between the two approaches one of which is step orientated(imperative) and the other being focused on the goal at hand without being centred on following steps(declarative).
+
 
